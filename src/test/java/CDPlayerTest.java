@@ -2,7 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class CDPlayerTest {
 
@@ -37,4 +36,15 @@ public class CDPlayerTest {
     public void startsWithEmptyArrayListOfCDs() {
         assertEquals(0, cdPlayer.getCDCollection().size());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Playing CD", cdPlayer.play());
+    }
+
+    @Test
+    public void canSkipSong() {
+        assertEquals("Song skipped", cdPlayer.skip());
+    }
+
 }

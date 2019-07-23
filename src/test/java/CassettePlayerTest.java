@@ -47,4 +47,15 @@ public class CassettePlayerTest {
         cassettePlayer.resetSpeed();
         assertEquals(1, cassettePlayer.getPlaySpeed());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Playing cassette", cassettePlayer.play());
+    }
+
+    @Test
+    public void canSkipSong() {
+        assertEquals("Song skipped", cassettePlayer.skip());
+    }
+
 }

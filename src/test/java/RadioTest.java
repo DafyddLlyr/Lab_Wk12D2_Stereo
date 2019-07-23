@@ -38,6 +38,10 @@ public class RadioTest {
         assertEquals("A380", radio.getModel());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("Playing radio", radio.play());
+    }
 
 }
 

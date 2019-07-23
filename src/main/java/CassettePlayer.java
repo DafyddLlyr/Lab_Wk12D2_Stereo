@@ -1,4 +1,4 @@
-public class CassettePlayer extends Component {
+public class CassettePlayer extends Component implements IPlay, ISkip {
 
     private int playSpeed;
 
@@ -17,5 +17,13 @@ public class CassettePlayer extends Component {
 
     public void resetSpeed() {
         this.playSpeed = 1;
+    }
+
+    public String play() {
+        return "Playing cassette";
+    }
+
+    public String skip() {
+        return "Song skipped";
     }
 }

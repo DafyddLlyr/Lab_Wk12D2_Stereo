@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class CDPlayer extends Component {
+public class CDPlayer extends Component implements IPlay, ISkip {
 
     private int capacity;
     private int numberOfCDs;
@@ -24,4 +24,13 @@ public class CDPlayer extends Component {
     public ArrayList<String> getCDCollection() {
         return this.cdCollection;
     }
+
+    public String play() {
+        return "Playing CD";
+    }
+
+    public String skip() {
+        return "Song skipped";
+    }
+
 }
